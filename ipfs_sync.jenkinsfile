@@ -4,7 +4,7 @@ final String IpfsUploaderVersion = "1.0.0";
 
 // Apparently this means get all files within the subfolders
 // of public, but not the files within public.
-final String fileGlob = "checkout/public/*/**/*.*";
+final String fileGlob = "checkout/public/**/*.pdf";
 
 pipeline
 {
