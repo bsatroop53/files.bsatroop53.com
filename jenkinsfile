@@ -31,7 +31,30 @@ pipeline
                 checkout scm;
             }
         }
-    
+
+        stage( 'In Docker' )
+        {
+            agent
+            {
+                docker
+                {
+                    image 'mcr.microsoft.com/dotnet/sdk:8.0'
+                    args "-e HOME='${env.WORKSPACE}'"
+                    reuseNode true
+                }
+            }
+            stages
+            {           
+                stage( 'build' )
+                {
+                    steps
+                    {
+                        sh 'cd ./checkout && ./devops.sh --target=build_all'
+                    }
+                }
+            }
+        }
+
         stage( 'deploy' )
         {
             steps
