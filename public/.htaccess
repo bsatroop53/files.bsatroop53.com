@@ -9,3 +9,4 @@ Header always set Permissions-Policy: interest-cohort=()
 # For the index file, bring them to a nice-looking page
 # on the main website that contains all the files.
 Redirect 301 "/index.html" "https://bsatroop53.com/about/archive.html"
+Redirect 301 "/" "https://bsatroop53.com/about/archive.html"
