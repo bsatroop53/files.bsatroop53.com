@@ -1,1 +1,12 @@
 public/~$filedata.xlsx
+
+# Generated automatically
+public/metrics.txt
+
+# IDEs
+.vs
+.vscode
+
+# C#
+_devops/DevOps/bin/
+_devops/DevOps/obj/
