@@ -1,6 +1,6 @@
 @Library( "X13JenkinsLib" )_
 
-final String IpfsUploaderVersion = "1.0.0";
+final String IpfsUploaderVersion = "1.1.0";
 
 // Apparently this means get all files within the subfolders
 // of public, but not the files within public.
