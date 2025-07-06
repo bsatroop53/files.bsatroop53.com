@@ -1,0 +1,1 @@
+These are mirrors of government resolutions or proclamations that are relevant to Scouting America units in Castleton, NY.
